@@ -7,5 +7,8 @@ public class Main {
     Enemy zombie = new Enemy();
     zombie.typeOfEnemy = "Zombie";
     System.out.println(zombie.typeOfEnemy + " has " + zombie.healthPoints + " health points and " + zombie.attackDamage + " attack damage.");
+    zombie.talk();
+    zombie.walkForward();
+    zombie.attack();
   }
 }
