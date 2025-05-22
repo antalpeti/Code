@@ -3,8 +3,14 @@ package battlearena;
 @SuppressWarnings("java:S106")
 public class Enemy {
   private String typeOfEnemy;
-  private int healthPoints = 10;
-  private int attackDamage = 1;
+  private int healthPoints;
+  private int attackDamage;
+
+  public Enemy(String typeOfEnemy, int healthPoints, int attackDamage) {
+    this.typeOfEnemy = typeOfEnemy;
+    this.healthPoints = healthPoints;
+    this.attackDamage = attackDamage;
+  }
 
   public String getTypeOfEnemy() {
     return typeOfEnemy;
